@@ -9,18 +9,20 @@ python版本: 2.7
 - 模板文件可以使用模板文件
 
 二、 使用
-1 安装依赖库
+
+
+1. 安装依赖库
 
 ```shell
 pip install -r  requirements.txt
 ```
 
-2 进入目录，运行脚本
+2. 进入目录，运行脚本
 ```shell
 python start_run.py
 ```
 
-3 预览，访问浏览器 http://127.0.0.1:10200 即可。
+3. 预览，访问浏览器 http://127.0.0.1:10200 即可。
 	http://127.0.0.1:10200/buypurpose   购车目的柱状图
 	http://127.0.0.1:10200/cararea      车辆区域分布全国地图	    
 
