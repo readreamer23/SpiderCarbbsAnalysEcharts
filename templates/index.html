@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>爬取数据分析统计DEMO</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+</head>
+<body style="padding-top: 70px;">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:">爬取汽车论坛评论数据分析统计</a>
+
+            <ul class="nav navbar-nav">
+                <li><a href="/">首页</a></li>
+            </ul>
+
+        </div>
+        <!-- /.nav-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- /.navbar -->
+<div class="container">
+    <div class="row">
+    
+    	 <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">购车目的</div>
+                <div class="panel-body">
+                    <p><a href="/buypurpose/8">某车型购车目的统计</a></p>
+                    <!--
+                    <p><a href="/buypurpose/8">长安CS35 PLUS车型购车目的统计</a></p>
+                    <p><a href="/buypurpose/">荣威RX5车型购车目的统计</a></p>
+                    <p><a href="/buypurpose/3">领克02车型购车目的统计</a></p>
+                    <p><a href="/buypurpose/4">广汽GE3车型购车目的统计</a></p>
+                    <p><a href="/buypurpose/5">宝马3系车型购车目的统计</a></p>
+                    <p><a href="/buypurpose/6">蔚来ES8车型购车目的统计</a></p>
+                    <p><a href="/buypurpose/7">奔驰C级车型购车目的统计</a></p>
+                     -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">车辆区域分布</div>
+                <div class="panel-body">
+                    <p><a href="/cararea/">车辆区域分布统计--上下滑动效果</a></p>
+                    <p><a href="/cararea/2">车辆区域分布统计--定义值区间效果</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">车载导航用户体验统计</div>
+                <div class="panel-body">
+                    <p><a href="/carnavigation/">车载导航用户体验统计</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">HU交互（大屏）用户体验统计</div>
+                <div class="panel-body">
+                    <p><a href="/huscreen/">HU交互（大屏）用户体验统计</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">某车型词频统计--论坛文章评论</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/changanCS35PLUS">论坛数据词云图</a></p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">某车型词频统计--口碑</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/8/manyi">口碑数据词云图--最满意的一点</a></p>
+                    <p><a href="/ciyun/8/bumanyi">口碑数据词云图--最不满意的一点</a></p>
+                    <p><a href="/ciyun/8/kongjian">口碑数据词云图--空间</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">荣威RX5 车型词频统计--论坛文章评论</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/">论坛词云图统计</a></p>
+                    <p><a href="/ciyuncountwords/">论坛评论词云统计数量</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">荣威RX5新能源 车型词频统计--口碑</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/1/manyi">词云图统计--最满意的一点</a></p>
+                    <p><a href="/ciyun/1/bumanyi">词云图统计--最不满意的一点</a></p>
+                    <p><a href="/ciyun/1/kongjian">词云图统计--空间</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">领克02 车型词频统计--口碑</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/3/manyi">词云图统计--最满意的一点</a></p>
+                    <p><a href="/ciyun/3/bumanyi">词云图统计--最不满意的一点</a></p>
+                    <p><a href="/ciyun/3/kongjian">词云图统计--空间</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">广汽GE3 车型词频统计--口碑</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/4/manyi">词云图统计--最满意的一点</a></p>
+                    <p><a href="/ciyun/4/bumanyi">词云图统计--最不满意的一点</a></p>
+                    <p><a href="/ciyun/4/kongjian">词云图统计--空间</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">宝马3系 车型词频统计--口碑</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/5/manyi">词云图统计--最满意的一点</a></p>
+                    <p><a href="/ciyun/5/bumanyi">词云图统计--最不满意的一点</a></p>
+                    <p><a href="/ciyun/5/kongjian">词云图统计--空间</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">蔚来ES8 车型词频统计--口碑</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/6/manyi">词云图统计--最满意的一点</a></p>
+                    <p><a href="/ciyun/6/bumanyi">词云图统计--最不满意的一点</a></p>
+                    <p><a href="/ciyun/6/kongjian">词云图统计--空间</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">奔驰C级 车型词频统计--口碑</div>
+                <div class="panel-body">
+                    <p><a href="/ciyun/7/manyi">词云图统计--最满意的一点</a></p>
+                    <p><a href="/ciyun/7/bumanyi">词云图统计--最不满意的一点</a></p>
+                    <p><a href="/ciyun/7/kongjian">词云图统计--空间</a></p>
+                </div>
+            </div>
+        </div>
+       -->  
+        
+    
+    <!-- 
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">日历热力图</div>
+                <div class="panel-body">
+                    <p><a href="/heatmap/">某人 2017 年微信步数情况</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">地图</div>
+                <div class="panel-body">
+                    <p><a href="/fujian/">福建省地图</a></p>
+                </div>
+            </div>
+        </div>
+        
+       -->
+        
+        
+       
+        
+        
+    </div>
+</div>
+</body>
+</html>

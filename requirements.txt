@@ -1,0 +1,12 @@
+flask==1.0.2
+pyecharts==0.5.10
+pymongo==3.7.1
+jieba==0.39
+matplotlib==2.2.3
+wordcloud==1.5.0
+echarts-countries-pypkg==0.1.4
+echarts-china-provinces-pypkg==0.0.2
+echarts-china-cities-pypkg==0.0.8
+echarts-china-counties-pypkg==0.0.2
+echarts-china-misc-pypkg==0.0.1
+echarts-united-kingdom-pypkg==0.0.1

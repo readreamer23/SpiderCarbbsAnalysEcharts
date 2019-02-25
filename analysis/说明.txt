@@ -1,0 +1,17 @@
+此目录作用: 放置统计分析脚本
+一、实时分析数据场景
+说明：此类图表是程序直接读取后台数据(mongodb),统计分析成集合展示到前端页面
+   1.购车目的统计图表  
+      buypurpose_all.py 脚本生成集合直接显示到 buypurpose_type.html
+   2.全国地图展示评论分布省
+      cararea.py 脚本生成集合直接显示到 cararea.html   
+
+二、非实时分析数据场景
+说明： 手动执行脚本生成页面或图片场景
+   1. 车载导航用户体验统计:  carnavigation.py 对应 carnavigation.html
+   2.词云:  生成评论数据词云 ciyun.py 对应 ciyun.html
+                            生成口碑数据词云 ciyun_type.py 对应type的html,例如ciyun_7_manyi.html
+                            
+   3.HU交互（大屏）用户体验统计:     huscreen_bar.py  对应 huscreen.html 
+   4.仪表数据统计:   motormetercount.py 对应 motormetercount.html
+

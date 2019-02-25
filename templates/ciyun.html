@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>车辆论坛词频统计</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    {{ echarts_js_dependencies(hm) }}
+</head>
+<body style="padding-top: 70px;">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"></a>
+
+            <ul class="nav navbar-nav">
+                <li><a href="javascript:"></a></li>
+            </ul>
+
+        </div>
+        <!-- /.nav-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- /.navbar -->
+<div class="container">
+    
+
+    <div class="panel panel-default">
+        <div class="panel-heading">论坛词频统计</div>
+        <div class="panel-body">
+        	<img alt="词频统计" src="{{ url_for('static', filename='images/wc.png') }}">
+        </div>
+    </div>
+	
+</div>
+</body>
+</html>
